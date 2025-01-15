@@ -19,6 +19,10 @@ def on_press(key):
             tab.Runtime.evaluate(expression="Runner.instance_.horizon.addCloud()")
         elif key.char == "g":
             tab.Runtime.evaluate(expression="Runner.instance_.tRex.groundYPos=0")
+        elif key.char == "f":
+            tab.Runtime.evaluate(expression="Runner.instance_.tRex.flashing=true")
+
+
     except:
         print("oshibka!")
 
