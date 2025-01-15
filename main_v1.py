@@ -27,6 +27,9 @@ def on_press(key):
             tab.Runtime.evaluate(expression="Runner.instance_.setArcadeMode()")
         elif key.char == "t":
             tab.Runtime.evaluate(expression="Runner.instance_.playingIntro=true")
+        elif key.char == "u":
+            tab.Runtime.evaluate(expression="Runner.instance_.tRex.groundYPos=140")
+
 
     except:
         print("oshibka!")
