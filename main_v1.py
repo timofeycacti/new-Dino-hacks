@@ -17,6 +17,8 @@ def on_press(key):
             tab.Runtime.evaluate(expression="Runner.instance_.gameOver()")
         elif key.char =='c':
             tab.Runtime.evaluate(expression="Runner.instance_.horizon.addCloud()")
+        elif key.char == "g":
+            tab.Runtime.evaluate(expression="Runner.instance_.tRex.groundYPos=0")
     except:
         print("oshibka!")
 
